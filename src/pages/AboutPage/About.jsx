@@ -22,7 +22,7 @@ export default function About () {
             </div>
           </div>
         </div>
-        <img src={imageAbout} className={styles.about__img} width='400' height='500' />
+        <img src={imageAbout} alt='person with a dog' className={styles.about__img} width='400' height='500' />
       </main>
     </>
   )

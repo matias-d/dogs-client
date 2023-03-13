@@ -2,7 +2,7 @@ import { createBreed } from '../../services/createBreed'
 import { getBreedByName as getBreedByNameAPI } from '../../services/getBreedByName'
 import { getBreeds } from '../../services/getBreeds'
 import { getTemperaments as getTemperamentsAPI } from '../../services/getTemperaments'
-import { CREATE_BREED, GET_ALL_BREEDS, GET_BREED_BY_NAME, GET_TEMPERAMENTS, START_FETCHING, START_POSTING } from './types'
+import { CREATE_BREED, FILTER_BREEDS, FILTER_TEMPERAMENT, GET_ALL_BREEDS, GET_BREED_BY_NAME, GET_TEMPERAMENTS, ORDER_BY, START_FETCHING, START_POSTING } from './types'
 
 function getAllBreeds (allBreeds) {
   return {
@@ -75,5 +75,26 @@ export function postBreed (newBreed) {
         dispatch(createNewBreed(res))
         dispatch(fetchAllBreeds())
       })
+  }
+}
+
+export function orderBy (order) {
+  return {
+    type: ORDER_BY,
+    payload: order
+  }
+}
+
+export function filterTemperament (filter) {
+  return {
+    type: FILTER_TEMPERAMENT,
+    payload: filter
+  }
+}
+
+export function filterBreeds (filter) {
+  return {
+    type: FILTER_BREEDS,
+    payload: filter
   }
 }

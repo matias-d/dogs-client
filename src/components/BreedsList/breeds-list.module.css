@@ -10,6 +10,25 @@
     flex-direction: column;
 }
 
+.notBreeds{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.notBreeds__error{
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 700;
+    color: var(--color-third);
+}
+
+.notBreeds__message {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--color-light);
+}
+
 @media (max-width: 640px) {
     .breedsList{
         grid-template-columns: 1fr 1fr;

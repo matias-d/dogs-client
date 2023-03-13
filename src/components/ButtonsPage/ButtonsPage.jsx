@@ -9,16 +9,16 @@ export default function ButtonsPage ({ onPage, page, limitPage }) {
 
   return (
     <div className={styles.breeds__pages_btns}>
-      <button disabled={page === 1} className={page === 1 ? styles.breeds__btn_disabled : styles.breeds__btn} onClick={() => onPage(page - 1)}>
-        <img src={arrowLeftSvg} className={styles.breeds__icon} />
+      <button disabled={page <= 1} className={page <= 1 ? styles.breeds__btn_disabled : styles.breeds__btn} onClick={() => onPage(page - 1)}>
+        <img src={arrowLeftSvg} alt='icon Arrow left' className={styles.breeds__icon} />
       </button>
       {
         limitPage > 1
           ? <h3 className={styles.breeds__numberPage}>Page: {page} of {Math.ceil(limitPage)}</h3>
           : <button className={styles.breeds__viewAll} onClick={() => dispatch(fetchAllBreeds())}>Back to go</button>
       }
-      <button className={page === Math.ceil(limitPage) ? styles.breeds__btn_disabled : styles.breeds__btn} onClick={() => onPage(page + 1)}>
-        <img src={arrowRightSvg} className={styles.breeds__icon} />
+      <button className={page === Math.ceil(limitPage) || limitPage <= 1 ? styles.breeds__btn_disabled : styles.breeds__btn} onClick={() => onPage(page + 1)}>
+        <img src={arrowRightSvg} alt='icon Arrow right' className={styles.breeds__icon} />
       </button>
     </div>
   )

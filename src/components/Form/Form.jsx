@@ -5,6 +5,7 @@ import styles from './form.module.css'
 import { validateData } from '../../utils/validateCreate'
 import MessageError from '../MessageError/MessageError'
 import { isFieldComplete } from '../../utils/isFieldComplete'
+import MessageModal from '../MessageModal/MessageModal'
 export default function Form () {
   const dispatch = useDispatch()
   const isLoading = useSelector(state => state.isLoadingPost)
@@ -40,7 +41,7 @@ export default function Form () {
     temperaments: ''
   })
 
-  const [formCompleted, setFormCompleted] = useState(true)
+  const [formCompleted, setFormCompleted] = useState('initial')
 
   const handleChange = (e) => {
     setNewBreed({
@@ -106,17 +107,23 @@ export default function Form () {
         },
         temperaments: []
       })
+      setFormCompleted('completed')
+      setTimeout(() => {
+        setFormCompleted('initial')
+      }, 7000)
       return
     }
 
-    setFormCompleted(false)
+    setFormCompleted('incompleted')
     setTimeout(() => {
-      setFormCompleted(true)
+      setFormCompleted('initial')
     }, 7000)
   }
 
   return (
-    <form onSubmit={handleSubmit} className={formCompleted ? styles.createBreed__form : styles.createBreed__form_error}>
+    <form onSubmit={handleSubmit} className={formCompleted === 'incompleted' ? styles.createBreed__form_error : styles.createBreed__form}>
+      {formCompleted === 'incompleted' && <MessageModal message='Please complete the incomplete fields' style='error' />}
+      {formCompleted === 'completed' && <MessageModal message='New race created, come back to see your changes' style='success' />}
       <div className={styles.form__input_container}>
         <label htmlFor='' className={styles.form__label}>Name of the breed</label>
         <input placeholder='Pitbull' type='text' className={styles.form__input} name='name' value={newBreed.name} onChange={(e) => handleChange(e)} />
@@ -163,7 +170,7 @@ export default function Form () {
       <div className={styles.form__input_container_doble}>
         <div className={styles.form__input_container}>
           <label htmlFor='' className={styles.form__label}>Height min of the breed</label>
-          <input placeholder='Number of height min' type='text' className={styles.form__input} name='min_height' onChange={(e) => handleChangeObj('height', e)} value={newBreed.height.max_height} />
+          <input placeholder='Number of height min' type='text' className={styles.form__input} name='min_height' onChange={(e) => handleChangeObj('height', e)} value={newBreed.height.min_height} />
           {error.min_height && <MessageError messageError={error.min_height} />}
         </div>
         <div className={styles.form__input_container}>
@@ -175,7 +182,7 @@ export default function Form () {
       <div className={styles.form__input_container_doble}>
         <div className={styles.form__input_container}>
           <label htmlFor='' className={styles.form__label}>Life span min of the breed</label>
-          <input placeholder='Number of life span min' type='text' className={styles.form__input} name='min_life_span' onChange={(e) => handleChangeObj('life_span', e)} value={newBreed.life_span.max_life_span} />
+          <input placeholder='Number of life span min' type='text' className={styles.form__input} name='min_life_span' onChange={(e) => handleChangeObj('life_span', e)} value={newBreed.life_span.min_life_span} />
           {error.min_life_span && <MessageError messageError={error.min_life_span} />}
         </div>
         <div className={styles.form__input_container}>

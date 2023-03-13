@@ -1,0 +1,37 @@
+.messageModal__error {
+    position: absolute;
+    right: 1rem;
+    width: 25vw;
+    text-align: center;
+    bottom: 2rem;
+    border-radius: 1.1rem;
+    border: 2px solid  rgb(245, 153, 153);
+    background-color:  rgba(245, 153, 153, 0.822);
+}
+
+.messageModal__success {
+    position: absolute;
+    right: 1rem;
+    width: 25vw;
+    text-align: center;
+    bottom: 2rem;
+    border-radius: 1.1rem;
+    border: 2px solid  rgb(161, 245, 153);
+    background-color:  rgba(156, 245, 153, 0.822);
+}
+
+
+.messageModal__message{
+    color: var(--color-light);
+    font-weight: 700;
+}
+
+@media (max-width: 640px) {
+
+    .messageModal__success, .messageModal__error{
+        width: 40vw;
+        top: 5rem;
+        height: 10vh;
+    }
+
+}

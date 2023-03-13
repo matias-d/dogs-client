@@ -5,7 +5,7 @@ export default function BreedsCard ({ breed }) {
   return (
     <div className={styles.bredsList__card}>
       <Link to={`/breed/${breed.id}`}>
-        <img src={breed.image} className={styles.card__img} />
+        <img src={breed.image} alt={`dog of breed ${breed.name}`} className={styles.card__img} />
       </Link>
       <h2 className={styles.card__name}>{breed.name}</h2>
       <div className={styles.card__temperament_container}>

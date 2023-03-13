@@ -20,7 +20,7 @@ export default function BreedsPage () {
 
   useEffect(() => {
     if (!breeds.length) dispatch(fetchAllBreeds())
-  }, [page, Search])
+  }, [page])
 
   return (
     <>
@@ -29,7 +29,7 @@ export default function BreedsPage () {
           <h1 className={styles.breeds__legend}>Breeds of all <span>kindse</span></h1>
           <p className={styles.breeds__desc}>When it comes to dog breeds, there are many different options to choose from. Whether you're looking for a small lap dog or a large guard dog, there's a breed out there that can meet your needs.</p>
         </div>
-        <img src='https://img.freepik.com/foto-gratis/hermoso-retrato-mascota-perro_23-2149218452.jpg?w=900&t=st=1678221154~exp=1678221754~hmac=f89721362df372a44e3c4e4fa3230b83ae1941fdfc889ac9eed97a6a3608287f' className={styles.breeds_img} />
+        <img src='https://img.freepik.com/foto-gratis/hermoso-retrato-mascota-perro_23-2149218452.jpg?w=900&t=st=1678221154~exp=1678221754~hmac=f89721362df372a44e3c4e4fa3230b83ae1941fdfc889ac9eed97a6a3608287f' className={styles.breeds_img} alt='image a dog with glasses' />
       </div>
       <section className={styles.breeds__container}>
         <div className={styles.breeds__actions}>
@@ -48,7 +48,6 @@ export default function BreedsPage () {
                 </>
                 )
           }
-
         </div>
       </section>
     </>

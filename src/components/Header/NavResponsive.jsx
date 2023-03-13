@@ -7,7 +7,7 @@ export default function NavResponsive ({ openModal, setOpenModal, styles }) {
       <div className={styles.header__legend_container}>
         <h2 className={styles.header__name_responsive}>DOGGI</h2>
         <button className={styles.header__close_container} onClick={() => setOpenModal(!openModal)}>
-          <img src={closeSvg} className={styles.header__close_svg} />
+          <img src={closeSvg} alt='icon close' className={styles.header__close_svg} />
         </button>
       </div>
       <ul className={styles.header__list_modal}>

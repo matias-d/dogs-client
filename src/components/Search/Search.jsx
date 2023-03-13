@@ -21,7 +21,7 @@ export default function Search () {
   return (
     <form onSubmit={handleSubmit} className={styles.breeds__input_container}>
       <input type='text' placeholder='Search breeds' value={breedName} className={styles.breeds__search} onChange={e => handleChange(e)} />
-      <img src={searchSvg} className={styles.breeds__search_svg} />
+      <img src={searchSvg} alt='icon search' className={styles.breeds__search_svg} />
     </form>
   )
 }

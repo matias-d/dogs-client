@@ -27,7 +27,7 @@ export default function DetailPage () {
   return (
     <>
       <main className={styles.breedDetail}>
-        <img src={wave} className={styles.breedDetail__wave} />
+        <img src={wave} alt={`dog of breed ${breed.name}`} className={styles.breedDetail__wave} />
         <Link to='/breeds' className={styles.breedDetail__backTo}><img src={arrowLeftSvg} /> Back to go</Link>
         {
           loading

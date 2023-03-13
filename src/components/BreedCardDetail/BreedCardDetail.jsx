@@ -23,17 +23,17 @@ export default function BreedCardDetail ({ breed }) {
       </div>
       <section className={styles.breedDetail__aditionals}>
         <div className={styles.breedDetail__aditional}>
-          <img src={iconBalance} className={styles.breedDetail__icon} />
+          <img src={iconBalance} alt='icon balance' className={styles.breedDetail__icon} />
           <h4 className={styles.breedDetail__legend}>Weight</h4>
           <p className={styles.breedDetail__types}>{breed.weight?.min_weight}kg - {breed.weight?.max_weight}kg</p>
         </div>
         <div className={styles.breedDetail__aditional}>
-          <img src={iconHueso} className={styles.breedDetail__icon} />
+          <img src={iconHueso} alt='icon bone' className={styles.breedDetail__icon} />
           <h4 className={styles.breedDetail__legend}>Height</h4>
           <p className={styles.breedDetail__types}>{breed.height?.min_height} - {breed.height?.max_height}</p>
         </div>
         <div className={styles.breedDetail__aditional}>
-          <img src={iconDog} className={styles.breedDetail__icon} />
+          <img src={iconDog} alt='icon a dog whit heart' className={styles.breedDetail__icon} />
           <h4 className={styles.breedDetail__legend}>Life Span</h4>
           <p className={styles.breedDetail__types}>{breed.life_span?.min_life_span} - {breed.life_span?.max_life_span} yrs</p>
         </div>

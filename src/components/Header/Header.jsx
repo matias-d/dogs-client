@@ -26,7 +26,7 @@ export default function Header () {
   return (
     <header className={styles.header}>
       <Link to='/' className={styles.header__logo_container}>
-        <img src={logo} className={styles.header__logo} width='40' />
+        <img src={logo} alt='logo of doggi' className={styles.header__logo} width='40' />
         <h2 className={styles.header__name}>DOGGI</h2>
       </Link>
       <ul className={styles.header__list}>
@@ -46,7 +46,7 @@ export default function Header () {
         <li className={styles.list__items_create}><Link to='/create-breed'>Create Breed</Link></li>
       </ul>
       <button onClick={() => setOpenModal(!openModal)} className={styles.header__menu_container}>
-        <img src={menuSvg} className={styles.header__menu_svg} />
+        <img src={menuSvg} alt='icon menu hamburger' className={styles.header__menu_svg} />
       </button>
       {
         openModal && (
