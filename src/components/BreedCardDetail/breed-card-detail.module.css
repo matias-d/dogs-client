@@ -1,0 +1,127 @@
+.breedDetail__info_container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7rem;
+    background-color: var(--color-light);
+    padding: 1rem;
+    height: calc(400px - 2rem);
+    border-top-right-radius: 0.8rem;
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.1);
+
+    border-bottom-right-radius: 0.8rem;
+    border-right: 2px solid var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+
+
+}
+
+
+.breedDetail__temperaments_container {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 1rem;
+    gap: 0.4rem;
+}
+
+.breedDetail__temperaments{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    max-width: 30vw;
+
+}
+
+.breedDetail__aditionals {
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+.breedDetail__about{
+    color: var(--color-secondary);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.breedDetail__about > span {
+    color : var(--color-primary)
+}
+
+.breedDetail__name {
+    font-size: 2.4rem;
+    color: var(--color-secondary);
+    margin: 0;
+}
+
+.breedDetail__temperaments_title {
+    color: var(--color-secondary-sub);
+    margin : 0
+}
+
+.breedDetail__temperament {
+    margin: 0;
+    background-color: var(--color-third);
+    color: var(--color-secondary);
+    padding: 0.2rem;
+    border-radius: 0.6rem;
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.1);
+
+}
+
+.breedDetail__icon {
+    width: 25px;
+    object-fit: cover;
+    height: 25px;
+}
+
+.breedDetail__legend {
+    font-size: 1.2rem;
+    color : var(--color-secondary-sub);
+    margin: 0;
+    margin-bottom: 0.4rem;
+}
+
+.breedDetail__types {
+    color : var(--color-third);
+    background-color: var(--color-primary);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.6rem;
+    margin: 0;
+
+}
+
+@media (max-width: 640px) {
+    
+    .breedDetail__name {
+        text-align: center;
+    }
+
+    .breedDetail__info_container{
+        align-items: center;
+        border-radius: 0;
+        border-bottom-left-radius: 0.8rem;
+        border-bottom-right-radius: 0.8rem;
+        height: auto;
+        padding: 0;
+        padding-bottom: 1rem ;
+        width: 90vw;
+        margin: 0 auto;
+        border-bottom: 2px solid var(--color-secondary);
+        border-right: 0;
+        border-bottom: 2px solid var(--color-third);
+    }
+
+    .breedDetail__temperaments_container {
+        align-items: center;
+    }
+
+    .breedDetail__temperaments {
+        justify-content: center;
+        max-width: 60vw;
+    }
+
+    .breedDetail__aditionals {
+        column-gap: 3rem;
+    }
+}

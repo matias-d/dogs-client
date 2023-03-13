@@ -1,0 +1,91 @@
+
+
+.hero__background{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    height: 100vh;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 4rem  8.4rem 0 8.4rem;
+    height: 70vh;
+    overflow: hidden;
+}
+
+
+.hero__present {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.4rem;
+    position: relative;
+    align-items: start;
+}
+
+.hero__legend {
+    color : var(--color-light);
+    font-size: 4rem;
+    margin: 0;
+    line-height: 4rem;
+
+}
+
+.hero__legend > span {
+    color : var(--color-third)
+}
+
+.hero__desc {
+    margin: 0;
+    color: var(--color-light);
+    opacity: 0.9;
+}
+
+.hero__btn {
+    background-color : var(--color-third);
+    color : var(--color-secondary);
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.hero__img{
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    z-index: -1;
+}
+
+.hero__btn:hover{
+    background-color: var(--color-third-sub);
+}
+
+.hero__groupdogs{
+
+    bottom: 2rem
+}
+
+@media (max-width: 640px) {
+    .hero__background {
+        display: none;
+    }
+
+    .hero__img{
+        display: none;
+    }
+
+    .hero{
+        padding: 4rem 1rem 0 1rem;
+        height: 100vh;
+        grid-template-columns: 1fr;
+    }
+    
+    
+
+}
+
+

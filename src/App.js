@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom'
+import Header from './components/Header/Header'
 
-function App() {
+// Pages Imports
+import About from './pages/AboutPage/About'
+import BreedsPage from './pages/BreedsPage/BreedsPage'
+import CreateBreedPage from './pages/CreateBreedPage/CreateBreedPage'
+import DetailPage from './pages/DetailPage/DetailPage'
+import LandingPage from './pages/LandingPage/LandingPage'
+
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Header />
+      <div className='App'>
+        <Routes>
+          <Route path='/' element={<LandingPage />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/create-breed' element={<CreateBreedPage />} />
+          <Route path='/breeds' element={<BreedsPage />} />
+          <Route path='/breed/:id' element={<DetailPage />} />
+        </Routes>
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,54 @@
+.breedDetail {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0 0 0;
+
+}
+
+.breedDetail__img {
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+    object-fit: cover;
+}
+
+.breedDetail__backTo{
+    position: absolute;
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 600;
+    align-items: center;
+    column-gap: 0.4rem;
+    color : var(--color-third);
+    left : 2.4rem;
+    top: 6.2rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.breedDetail__backTo:hover {
+    color: var(--color-third-sub);
+}
+
+.breedDetail__wave{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: -1;
+}
+
+@media (max-width: 640px) {
+    .breedDetail{ 
+        flex-direction: column;
+        padding: 4rem 0 1rem 0;
+    }
+
+    .breedDetail__img {
+        width: 80%;
+        margin: 0 auto;
+        object-fit: cover;
+        border-radius: 0.8rem;
+    }
+
+}
+
+

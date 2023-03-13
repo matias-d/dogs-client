@@ -1,0 +1,18 @@
+.breedsList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap : 1rem;
+    padding: 1.4rem 0;
+}
+
+.bredsList__card{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 640px) {
+    .breedsList{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
