@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/dogs-client/static/css/main.f863be27.css",
+    "main.js": "/dogs-client/static/js/main.55b0fe2c.js",
+    "static/media/about-image.png": "/dogs-client/static/media/about-image.39c9e467263c9b9f1985.png",
+    "static/media/landing-dog.png": "/dogs-client/static/media/landing-dog.c2ca8facec1b89c184bf.png",
+    "static/media/group-dogs.png": "/dogs-client/static/media/group-dogs.d35c18a39d1869ebb0a5.png",
+    "static/media/icon-svg.svg": "/dogs-client/static/media/icon-svg.135bc996018c3319441bc60b203f7c57.svg",
+    "static/media/github.svg": "/dogs-client/static/media/github.32984d5aec031e288cea45e5e3572476.svg",
+    "static/media/search.svg": "/dogs-client/static/media/search.ab3e8513aab1993d95475b4d4adb8ccc.svg",
+    "static/media/menu.svg": "/dogs-client/static/media/menu.2fb030de41ac90b84ecd30f5890779d6.svg",
+    "static/media/close.svg": "/dogs-client/static/media/close.bc473202564982016eb8cb01dde8a1cd.svg",
+    "index.html": "/dogs-client/index.html",
+    "static/media/Vector 4.svg": "/dogs-client/static/media/Vector 4.7e0530194238bbfdbba86b36e21f9b6c.svg",
+    "static/media/linkedin.svg": "/dogs-client/static/media/linkedin.b6a909c56aa1f2f6a42e508ac9529b9d.svg",
+    "static/media/wave.svg": "/dogs-client/static/media/wave.a3510442a88bb99c5eeecf723b2c1a1b.svg",
+    "static/media/arrow-right.svg": "/dogs-client/static/media/arrow-right.b227bd062c712a80e4380293957572ef.svg",
+    "static/media/arrow-left.svg": "/dogs-client/static/media/arrow-left.06f45da9f5ecd7b2e1f00c76fc5108c0.svg",
+    "main.f863be27.css.map": "/dogs-client/static/css/main.f863be27.css.map",
+    "main.55b0fe2c.js.map": "/dogs-client/static/js/main.55b0fe2c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f863be27.css",
+    "static/js/main.55b0fe2c.js"
+  ]
+}
