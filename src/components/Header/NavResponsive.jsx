@@ -26,7 +26,7 @@ export default function NavResponsive ({ openModal, setOpenModal, styles }) {
             About Us
           </Link>
         </li>
-        <li className={styles.list__items_create} onClick={() => setOpenModal(false)}>Create Breed</li>
+        <li className={styles.list__items_create} onClick={() => setOpenModal(false)}><Link to='/create-breed'>Create Breed </Link> </li>
       </ul>
     </div>
   )

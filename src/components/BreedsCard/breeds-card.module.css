@@ -6,11 +6,34 @@
     border-bottom: 4px solid var(--color-third);
 }
 
+.card_img_container {
+    position: relative;
+}
+
 .card__img{
     width: 100%;
     height: 200px;
+
     object-fit: cover;
     margin-bottom: 1rem;
+}
+
+.card__logo_hover{
+    position: absolute;
+    background-color: var(--color-secondary);
+    padding: 0.8rem 0.4rem;
+    box-sizing: content-box;
+    border-radius: 100%;
+    left: 7rem;
+    bottom: 6rem;
+    transform: translateY(2rem);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.card_img_container:hover .card__logo_hover {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .card__name{
@@ -57,6 +80,8 @@
     font-weight: 600;
 }
 
+
+
 .temperament__title{
     margin: 0;
     color: var(--color-secondary-sub);
@@ -65,5 +90,9 @@
 @media (max-width: 640px) {
     .card__img{
         height: auto;
+    }
+
+    .card__logo_hover{
+        display: none;
     }
 }

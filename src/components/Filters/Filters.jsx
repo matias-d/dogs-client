@@ -6,7 +6,7 @@ export default function Filters () {
   const temperaments = useSelector(state => state.temperaments)
   const dispatch = useDispatch()
 
-  const temperamentsToOrder = temperaments.sort((a, b) => {
+  const temperamentsToOrder = temperaments?.sort((a, b) => { // Ordena los temperamentos alfabeticamente
     if (a.name > b.name) { return 1 }
     if (a.name < b.name) { return -1 }
     return 0
@@ -36,7 +36,7 @@ export default function Filters () {
         <select onChange={(e) => onFilterTemperament(e)} className={styles.filtering__select}>
           <option value='Alls'>All</option>
           {
-            temperamentsToOrder.map(temp => (
+            temperamentsToOrder?.map(temp => (
               <option key={temp.name} value={temp.name}>{temp.name}</option>
             ))
           }

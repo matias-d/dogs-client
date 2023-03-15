@@ -18,11 +18,11 @@ export default function BreedsList ({ breeds }) {
 
   return (
     <div className={styles.breedsList}>
-      {breeds &&
-            breeds
-              .map(breed => (
-                <BreedsCard key={breed.id} breed={breed} />
-              ))}
+      {
+        breeds?.map(breed => (
+          <BreedsCard key={breed.id} breed={breed} />
+        ))
+      }
     </div>
   )
 }

@@ -46,6 +46,7 @@
     color: var(--color-light);
     width: 40vw;
     flex: 1;
+    line-height: 1.4rem;
     font-weight: 600;
 }
 

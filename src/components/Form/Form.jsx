@@ -88,7 +88,7 @@ export default function Form () {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    if (isFieldComplete(newBreed)) {
+    if (isFieldComplete(newBreed) && !Object.keys(error).length) {
       dispatch(postBreed(newBreed))
       setNewBreed({
         name: '',
@@ -110,7 +110,7 @@ export default function Form () {
       setFormCompleted('completed')
       setTimeout(() => {
         setFormCompleted('initial')
-      }, 7000)
+      }, 5000)
       return
     }
 
@@ -139,7 +139,7 @@ export default function Form () {
         <select name='temperaments' onChange={(e) => handleChangeTemp(e)} className={styles.form__select}>
           <option value=''>Select a temperament of breed</option>
           {
-            temperaments.map(temper => (
+            temperaments?.map(temper => (
               <option key={temper.name} value={temper.name}>{temper.name}</option>
             ))
           }
