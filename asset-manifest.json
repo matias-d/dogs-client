@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dogs-client/static/css/main.f863be27.css",
-    "main.js": "/dogs-client/static/js/main.55b0fe2c.js",
+    "main.js": "/dogs-client/static/js/main.b7f9a1e2.js",
     "static/media/about-image.png": "/dogs-client/static/media/about-image.39c9e467263c9b9f1985.png",
     "static/media/landing-dog.png": "/dogs-client/static/media/landing-dog.c2ca8facec1b89c184bf.png",
     "static/media/group-dogs.png": "/dogs-client/static/media/group-dogs.d35c18a39d1869ebb0a5.png",
@@ -17,10 +17,10 @@
     "static/media/arrow-right.svg": "/dogs-client/static/media/arrow-right.b227bd062c712a80e4380293957572ef.svg",
     "static/media/arrow-left.svg": "/dogs-client/static/media/arrow-left.06f45da9f5ecd7b2e1f00c76fc5108c0.svg",
     "main.f863be27.css.map": "/dogs-client/static/css/main.f863be27.css.map",
-    "main.55b0fe2c.js.map": "/dogs-client/static/js/main.55b0fe2c.js.map"
+    "main.b7f9a1e2.js.map": "/dogs-client/static/js/main.b7f9a1e2.js.map"
   },
   "entrypoints": [
     "static/css/main.f863be27.css",
-    "static/js/main.55b0fe2c.js"
+    "static/js/main.b7f9a1e2.js"
   ]
 }
