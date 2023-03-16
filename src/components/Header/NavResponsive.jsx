@@ -12,7 +12,7 @@ export default function NavResponsive ({ openModal, setOpenModal, styles }) {
       </div>
       <ul className={styles.header__list_modal}>
         <li className={styles.list__items_modal} onClick={() => setOpenModal(false)}>
-          <Link to='/'>
+          <Link to='/dogs-client'>
             Home
           </Link>
         </li>

@@ -7,7 +7,7 @@ import menuSvg from '../../assets/svg/menu.svg'
 
 const navLinks = [
   {
-    path: '/',
+    path: '/dogs-client',
     item: 'Home'
   },
   {
